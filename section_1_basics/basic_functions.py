@@ -19,6 +19,12 @@ cv.imshow("Gray", gray)
 blur = cv.GaussianBlur(img, (7, 7), cv.BORDER_DEFAULT)
 cv.imshow("Blur", blur)
 
+
+# Edge Cascade
+canny = cv.Canny(blur, 125, 175)
+cv.imshow("Canny Edges", canny)
+
+
 # Wait indefinitely until any key is pressed
 cv.waitKey(0)
 cv.destroyAllWindows()
