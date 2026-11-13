@@ -15,6 +15,10 @@ gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow("Gray", gray)
 
 
+# Blur the image
+blur = cv.GaussianBlur(img, (7, 7), cv.BORDER_DEFAULT)
+cv.imshow("Blur", blur)
+
 # Wait indefinitely until any key is pressed
 cv.waitKey(0)
 cv.destroyAllWindows()
