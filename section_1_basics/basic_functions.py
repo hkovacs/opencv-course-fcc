@@ -25,6 +25,11 @@ canny = cv.Canny(blur, 125, 175)
 cv.imshow("Canny Edges", canny)
 
 
+# Dilate the image
+dilated = cv.dilate(canny, (7, 7), iterations=3)
+cv.imshow("Dilated", dilated)
+
+
 # Wait indefinitely until any key is pressed
 cv.waitKey(0)
 cv.destroyAllWindows()
