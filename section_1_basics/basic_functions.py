@@ -40,6 +40,11 @@ resized = cv.resize(img, (770, 770), interpolation=cv.INTER_CUBIC)
 cv.imshow("Resized", resized)
 
 
+# Crop the image
+cropped = img[50:200, 200:400]
+cv.imshow("Cropped", cropped)
+
+
 # Wait indefinitely until any key is pressed
 cv.waitKey(0)
 cv.destroyAllWindows()
