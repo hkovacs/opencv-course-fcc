@@ -30,6 +30,11 @@ dilated = cv.dilate(canny, (7, 7), iterations=3)
 cv.imshow("Dilated", dilated)
 
 
+# Erode the image
+eroded = cv.erode(dilated, (7, 7), iterations=3)
+cv.imshow("Eroded", eroded)
+
+
 # Wait indefinitely until any key is pressed
 cv.waitKey(0)
 cv.destroyAllWindows()
