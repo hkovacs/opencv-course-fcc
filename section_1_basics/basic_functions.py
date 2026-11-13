@@ -35,6 +35,11 @@ eroded = cv.erode(dilated, (7, 7), iterations=3)
 cv.imshow("Eroded", eroded)
 
 
+# Resize the image
+resized = cv.resize(img, (770, 770), interpolation=cv.INTER_CUBIC)
+cv.imshow("Resized", resized)
+
+
 # Wait indefinitely until any key is pressed
 cv.waitKey(0)
 cv.destroyAllWindows()
