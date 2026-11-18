@@ -223,3 +223,7 @@ __marimo__/
 section_3_facial_recognition/face_trained.yml
 section_3_facial_recognition/features.npy
 section_3_facial_recognition/labels.npy
+
+# Data
+simpsons-characters-data
+*.zip
