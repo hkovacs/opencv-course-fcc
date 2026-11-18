@@ -160,3 +160,10 @@ Performs standalone inference using the saved *Simpsons* character classificatio
 - **Model & Metadata Loading:** Loading the serialized Keras classifier (`simpsons_classifier.keras`) alongside the class label mapping (`characters.json`).
 - **Image Preprocessing & Inference (`predict_character`):** Reading test images via OpenCV (`cv.imread`), converting BGR to RGB (`cv.cvtColor`), resizing to `80x80` (`cv.resize`), and running forward-pass predictions (`model(tensor, training=False)`) to output the predicted character name and confidence percentage.
 - **Visual Verification:** Displaying the input test image alongside its predicted label using Matplotlib (`plt.imshow`).
+
+
+---
+
+## License
+
+This project is licensed under the **Apache License 2.0** — see the [LICENSE](LICENSE) file for details.
